@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+  Collaborative Learning Spaces — Nextcloud side.
+  Skeleton: enables cleanly, no features yet. See ../../specs.
+-->
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>moodle_deck_sync</id>
+    <name>Moodle Deck Sync</name>
+    <summary>Sync Moodle course groups with Nextcloud Deck boards</summary>
+    <description>Provisions Nextcloud Deck boards from Moodle course groups and assignments (Collaborative Learning Spaces integration). Phase 1 targets Nextcloud 34 with Deck 1.18.2.</description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author>Collaborative Learning Spaces</author>
+    <namespace>MoodleDeckSync</namespace>
+    <category>integration</category>
+    <bugs>https://example.com/moodle_deck_sync/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="34" max-version="34"/>
+    </dependencies>
+</info>

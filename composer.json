@@ -1,0 +1,39 @@
+{
+    "name": "collaborative-learning-spaces/moodle-deck-sync",
+    "description": "Moodle to Nextcloud Deck integration",
+    "type": "nextcloud-app",
+    "license": "AGPL-3.0-or-later",
+    "require": {
+        "php": "^8.3",
+        "nextcloud/ocp": "~34.0.2"
+    },
+    "require-dev": {
+        "nextcloud/coding-standard": "^1.5",
+        "phpunit/phpunit": "^11.5",
+        "vimeo/psalm": "^6.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "OCA\\MoodleDeckSync\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OCA\\MoodleDeckSync\\Tests\\": "tests/",
+            "OCP\\": "vendor/nextcloud/ocp/OCP/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --configuration phpunit.xml",
+        "psalm": "psalm --no-cache --threads=1 --scan-threads=1 --config=psalm.xml",
+        "cs:check": "php-cs-fixer fix --dry-run --diff --sequential",
+        "cs:fix": "php-cs-fixer fix --sequential",
+        "fixtures:verify": "php ../../specs/02-integration/fixtures/generate.php --verify"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    }
+}

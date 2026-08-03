@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<psalm xmlns="https://getpsalm.org/schema/config"
+       errorLevel="4"
+       findUnusedCode="false"
+       phpVersion="8.3"
+       resolveFromConfigFile="true">
+    <projectFiles>
+        <directory name="lib"/>
+        <directory name="tests"/>
+        <ignoreFiles>
+            <directory name="vendor"/>
+        </ignoreFiles>
+    </projectFiles>
+    <extraFiles>
+        <directory name="vendor/nextcloud/ocp/OCP"/>
+    </extraFiles>
+</psalm>
