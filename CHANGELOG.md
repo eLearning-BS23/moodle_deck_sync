@@ -2,6 +2,12 @@
 
 All notable changes to Moodle Deck Sync are documented here.
 
+## 1.0.1 - 2026-08-21
+
+- Enriched Nextcloud App Store metadata with value-driven product descriptions and structured feature outlines.
+- Added official dual-branded promotional cover banner asset (`img/cover.jpg`).
+- Updated XML schema metadata for App Store compliance, linking repository and documentation trackers.
+
 ## 1.0.0 - 2026-08-03
 
 - Initial App Store release candidate for the Collaborative Learning Spaces

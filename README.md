@@ -1,11 +1,8 @@
 # Moodle Deck Sync
 
-Moodle Deck Sync is the Nextcloud companion app for Collaborative Learning
-Spaces. It receives signed Moodle webhook events, provisions Nextcloud Deck
-boards for Moodle course groups and assignments, manages board membership, and
-exposes health/configuration endpoints for administrators.
+![Moodle Deck Sync](img/cover.jpg)
 
-This app is the Nextcloud half of the integration.
+Moodle Deck Sync connects course-driven learning in Moodle with agile, visual task management in Nextcloud Deck. It is the Nextcloud companion app for Collaborative Learning Spaces that receives signed Moodle webhook events, provisions Nextcloud Deck boards for Moodle course groups and assignments, manages board membership, and exposes health/configuration endpoints for administrators.
 
 ## Getting the Moodle plugin
 
@@ -14,8 +11,9 @@ Brain Station 23 rather than through the Moodle plugins directory. Both halves
 are required: Moodle sends the signed course/group events, and this Nextcloud
 app turns those events into Deck boards and membership changes.
 
-To request the Moodle plugin, or for installation and support enquiries,
-contact **<elearning@brainstation-23.com>**.
+- **Moodle Product Page:** <https://elearning23.com/nextcloud-deck-sync-for-moodle/>
+- **Nextcloud App Store:** <https://apps.nextcloud.com/apps/moodle_deck_sync>
+- **Support & Enquiries:** **<elearning@brainstation-23.com>**
 
 ## What it does
 
@@ -47,8 +45,11 @@ fresh Deck/API readiness pass before release.
 
 ## Installation
 
-For development, place this app at `apps-extra/moodle_deck_sync` or another
-enabled Nextcloud app path, then run:
+### From Nextcloud App Store
+Navigate to **Apps → Integration → Moodle Deck Sync** in your Nextcloud instance and click **Download and enable**.
+
+### From Source / Development
+For development, place this app at `apps-extra/moodle_deck_sync` or another enabled Nextcloud app path, then run:
 
 ```bash
 composer install
@@ -57,13 +58,11 @@ npm run build
 php /var/www/html/occ app:enable moodle_deck_sync
 ```
 
-Run `occ` inside a real Nextcloud installation or container. It cannot run as a
-standalone host command.
+Run `occ` inside a real Nextcloud installation or container. It cannot run as a standalone host command.
 
 ## Configuration
 
-Configure the app from the Nextcloud administration settings page after enabling
-it:
+Ensure the **Nextcloud Deck** app is enabled and create a dedicated Nextcloud bot user with an app password. Then configure Moodle Deck Sync from the Nextcloud administration settings page (**Administration settings → Moodle Deck Sync**):
 
 - Allowed Moodle instance URLs
 - Shared HMAC secret
@@ -72,8 +71,7 @@ it:
 - User provisioning mode
 - Optional purge policy for archived boards
 
-Never log or share bot passwords, shared secrets, full signatures, raw webhook
-bodies, or unnecessary personally identifiable information.
+Never log or share bot passwords, shared secrets, full signatures, raw webhook bodies, or unnecessary personally identifiable information.
 
 ## Health Check
 
@@ -108,15 +106,6 @@ The quality target runs:
 Generated frontend assets under `js/` are release artifacts and must be
 committed before signing a release.
 
-## Release
-
-Use the repository runbook:
-
-```text
-RELEASING_MOODLE_DECK_SYNC.md
-```
-
-The Nextcloud App Store release version is read from `appinfo/info.xml`.
 
 ## Security
 
