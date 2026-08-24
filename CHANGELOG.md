@@ -2,6 +2,11 @@
 
 All notable changes to Moodle Deck Sync are documented here.
 
+## 1.0.2 - 2026-08-24
+
+- Added App Store promotional cover screenshot URL in `appinfo/info.xml` to render media showcase and catalog card thumbnail.
+- Formatted external documentation and App Store URLs in `<description>` as clickable Markdown links.
+
 ## 1.0.1 - 2026-08-21
 
 - Enriched Nextcloud App Store metadata with value-driven product descriptions and structured feature outlines.

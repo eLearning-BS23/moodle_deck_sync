@@ -26,10 +26,10 @@ While Moodle excels at course management, grading, and submissions, student proj
 - Nextcloud Deck 1.18.2 or compatible
 - PHP 8.3+
 - Moodle instance with the companion `local_nextclouddeck` plugin.
-- Product Documentation: https://elearning23.com/nextcloud-deck-sync-for-moodle/
-- Nextcloud App Store: https://apps.nextcloud.com/apps/moodle_deck_sync
+- Product Documentation: [elearning23.com/nextcloud-deck-sync-for-moodle](https://elearning23.com/nextcloud-deck-sync-for-moodle/)
+- Nextcloud App Store: [apps.nextcloud.com/apps/moodle_deck_sync](https://apps.nextcloud.com/apps/moodle_deck_sync)
 ]]></description>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <licence>AGPL-3.0-or-later</licence>
     <author>Collaborative Learning Spaces</author>
     <namespace>MoodleDeckSync</namespace>
@@ -37,6 +37,7 @@ While Moodle excels at course management, grading, and submissions, student proj
     <website>https://elearning23.com/nextcloud-deck-sync-for-moodle/</website>
     <bugs>https://github.com/eLearning-BS23/moodle_deck_sync/issues</bugs>
     <repository>https://github.com/eLearning-BS23/moodle_deck_sync.git</repository>
+    <screenshot>https://raw.githubusercontent.com/eLearning-BS23/moodle_deck_sync/main/img/cover.jpg</screenshot>
     <dependencies>
         <nextcloud min-version="34" max-version="34"/>
     </dependencies>
